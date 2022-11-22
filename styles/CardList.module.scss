@@ -1,0 +1,8 @@
+@import './vars.scss';
+
+.card-list {
+  margin: rem(29) 0;
+  display: flex;
+  flex-direction: column;
+  gap: rem(8);
+}

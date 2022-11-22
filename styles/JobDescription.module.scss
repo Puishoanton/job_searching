@@ -1,0 +1,275 @@
+@import './vars.scss';
+
+.wrapper {
+  max-width: rem(1300);
+  margin: rem(56) auto;
+  padding: 0 rem(15);
+
+  .jobDetails-contacts {
+    color: $prime;
+    display: flex;
+    gap: rem(134);
+    h1 {
+      font-size: rem(28);
+      font-weight: 700;
+      line-height: rem(34);
+      letter-spacing: rem(0.413333);
+    }
+    h2 {
+      font-size: rem(24);
+      font-weight: 700;
+      line-height: rem(30);
+      letter-spacing: rem(-0.75);
+    }
+    h3 {
+      font-size: rem(20);
+      font-weight: 700;
+      line-height: rem(25);
+      letter-spacing: rem(-0.625);
+    }
+    h4,
+    p {
+      font-size: rem(18);
+      line-height: rem(24);
+      letter-spacing: rem(-0.5625);
+    }
+
+    .job-details {
+      .header {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: rem(10);
+        margin-bottom: rem(20);
+        border-bottom: rem(1) solid rgb(58, 69, 98, 0.13);
+
+        .save-share {
+          display: flex;
+          align-items: center;
+          gap: rem(24);
+          .save,
+          .share {
+            display: flex;
+            align-items: center;
+            gap: rem(8);
+          }
+        }
+      }
+      .main {
+        button {
+          margin: rem(20) 0;
+          border: none;
+          padding: rem(18) rem(30);
+          background: #384564;
+          border-radius: rem(8);
+          transform: scale(1);
+          transition: transform 0.2s ease-in;
+          &:hover {
+            cursor: pointer;
+            background: #323e5a;
+            transform: scale(0.97);
+            transition: transform 0.2s ease-in;
+          }
+        }
+        .info {
+          margin-top: rem(12);
+
+          .title-salary {
+            display: flex;
+            justify-content: space-between;
+            gap: rem(60);
+
+            .salary {
+              h3 {
+                white-space: nowrap;
+              }
+              p {
+                white-space: nowrap;
+              }
+            }
+          }
+          .date-of-post {
+            margin: rem(7) 0;
+            font-size: rem(18);
+            line-height: rem(24);
+            letter-spacing: rem(-0.5625);
+            color: rgba(56, 65, 93, 0.355988);
+          }
+          .description {
+            .responsopilities {
+              h3 {
+                margin: rem(30) 0 rem(10);
+              }
+              p:not(:last-child) {
+                margin-bottom: rem(20);
+              }
+            }
+            .compensation-benefits {
+              h3 {
+                margin: rem(30) 0 rem(10);
+              }
+              h4 {
+                font-weight: 400;
+              }
+              ul {
+                margin: 0 0 rem(20);
+                padding: 0;
+                font-size: rem(18);
+                line-height: rem(24);
+                letter-spacing: rem(-0.5625);
+                list-style: none;
+                li {
+                  position: relative;
+                  &::before {
+                    content: '■';
+                    color: rgba(56, 69, 100, 0.632594);
+                    position: absolute;
+                    top: 0;
+                    left: rem(-20);
+                    transform: scale(0.8);
+                  }
+                }
+              }
+            }
+          }
+        }
+        .additional {
+          h2 {
+            margin-top: rem(30);
+            padding-bottom: rem(10);
+            border-bottom: rem(1) solid rgb(58, 69, 98, 0.13);
+          }
+          .employment-type,
+          .benefits {
+            h3 {
+              margin: rem(15) 0 rem(10);
+            }
+            .blocks {
+              display: flex;
+              gap: rem(10);
+              p {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: rem(222);
+                height: rem(49);
+                font-weight: 700;
+                font-size: rem(16);
+                line-height: rem(16);
+                text-align: center;
+                letter-spacing: rem(-0.457143);
+                margin-bottom: rem(8);
+              }
+            }
+          }
+        }
+        .attached-images {
+          h2 {
+            margin-top: rem(79);
+            padding-bottom: rem(10);
+            border-bottom: rem(1) solid rgb(58, 69, 98, 0.13);
+          }
+          .images {
+            display: flex;
+            gap: rem(10);
+            img {
+              width: rem(200);
+              height: rem(133);
+              margin-top: rem(30);
+              border-radius: rem(8);
+            }
+          }
+        }
+      }
+    }
+    .contacts {
+      background: #2a3047;
+      height: fit-content;
+      border-radius: rem(8);
+      .address {
+        position: relative;
+        overflow: hidden;
+        .decor {
+          position: absolute;
+          top: 0;
+          left: rem(50);
+          width: rem(273);
+          height: rem(273);
+          border-radius: 50%;
+          transform: translate(-50%);
+          background: #202336;
+        }
+        .content {
+          position: relative;
+          z-index: 1;
+          padding: rem(31) rem(62) rem(20);
+          display: flex;
+          flex-direction: column;
+          gap: rem(8);
+          h2 {
+            font-weight: 700;
+            font-size: rem(20);
+            line-height: rem(25);
+            letter-spacing: rem(-0.625);
+            color: #e7eaf0;
+          }
+          .location,
+          .phone-email {
+            color: #e8ebf3;
+            img {
+              margin-right: rem(8);
+            }
+            p {
+              font-weight: 400;
+              font-size: rem(18);
+              line-height: rem(24);
+              letter-spacing: rem(-0.5625);
+            }
+          }
+        }
+      }
+      .map {
+        position: relative;
+        overflow: hidden;
+        img {
+          border-bottom-left-radius: rem(8);
+          border-bottom-right-radius: rem(8);
+          &:last-child {
+            position: absolute;
+            top: rem(50);
+            left: rem(85);
+            width: rem(20);
+            height: rem(36);
+          }
+        }
+      }
+    }
+  }
+  .back-to-home {
+    margin-top: rem(85);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: rem(213);
+    height: rem(50);
+    background: rgb(56, 69, 100, 0.13);
+
+    border-radius: rem(8);
+    img {
+      margin-right: rem(19);
+    }
+    h3 {
+      font-weight: 600;
+      font-size: rem(12);
+      line-height: rem(16);
+      text-align: center;
+      text-transform: uppercase;
+      color: #3a4562;
+    }
+  }
+}
+@media (max-width: 769px) {
+  .jobDetails-contacts {
+    display: flex;
+    flex-direction: column;
+  }
+}
