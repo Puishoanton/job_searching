@@ -28,7 +28,8 @@ export const useFetching: useFetchingProps = (url, page, limit) => {
           _page: page,
         },
       })
-      setTotalPage(response.headers['x-total-count'] || '0')
+      // setTotalPage(response.headers['x-total-count'] || '0')
+      setTotalPage(response.data.length || '0')
       setIsLoading(false)
       return setData(response.data)
     } catch (e) {
