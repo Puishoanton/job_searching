@@ -7,7 +7,7 @@ Welcome to my pet project.
 - HTML, CSS(SCSS), JS
 ## What's it  about?
 The website shows you a job list where you can open a job and read more about it. 
-##Screenshots: 
+## Screenshots: 
 ![job1](https://user-images.githubusercontent.com/90341046/213922356-1c410349-efd9-4d0e-86a1-f6252ebc595d.png)
 ![job2](https://user-images.githubusercontent.com/90341046/213922365-432ff6ec-2e8f-4ca1-8bdc-080ac038fc5c.png)
 ## Install project locally: 
